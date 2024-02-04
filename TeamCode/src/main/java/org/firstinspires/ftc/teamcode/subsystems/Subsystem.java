@@ -9,12 +9,15 @@ public abstract class Subsystem {
 
 	public Subsystem(Routine routine) {
 		this.routine = routine;
+	}
+
+	public void onInit() {
 		this.telemetry = routine.telemetry;
 	}
 
-	public void onInit() {}
-
 	public void onStart() {}
+
+	public void onExit() {}
 
 	protected boolean isStopRequested() {
 		return routine.isStopRequested();

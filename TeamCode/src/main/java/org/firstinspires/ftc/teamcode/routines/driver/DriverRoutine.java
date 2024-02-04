@@ -22,5 +22,6 @@ public class DriverRoutine extends Routine {
 	@Override
 	public void onExit() {
 		super.onExit();
+		system.onExit();
 	}
 }
